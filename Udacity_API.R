@@ -33,18 +33,3 @@ feedback.stats <- getJSON(feedback.statsURI)
 
 submissions.completedURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
 submissions.coompleted <- getJSON(submissions.completedURI)
-
-certificationsURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
-certifications <- getJSON(certificationsURI)
-
-certificationsURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
-certifications <- getJSON(certificationsURI)
-
-certificationsURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
-certifications <- getJSON(certificationsURI)
-
-certificationsURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
-certifications <- getJSON(certificationsURI)
-
-certificationsURI <- 'https://review-api.udacity.com/api/v1/me//certifications'
-certifications <- getJSON(certificationsURI)
