@@ -1,14 +1,15 @@
 library(jsonlite)
 library(httr)
 
-# Load Credentials
-path <- '/Users/jas/tokens/'
-json_file <- paste0(path,'udacity.json')
+# Load credentials
+path <- '/Users/jas/tokens/' #change to the path where your API key in a JSON file is stored
+json_file <- paste0(path,'udacity.json') #this file has the API_key 
 credentials <- fromJSON(json_file, flatten=TRUE)
 
+# Function to generate results for most of the API calls without start and end date arguments
 getJSON <- function(requestURI){
   certifications <- GET(requestURI,
-                        add_headers(Authorization = credentials$API_Key),
+                        add_headers(Authorization = credentials$API_Key), #the JSON file with your API key has a key called API_KEY
                         accept("application/json"))
   stop_for_status(certifications)
   certifications <- content(certifications)
